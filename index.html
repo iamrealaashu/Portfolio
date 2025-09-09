@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aashutosh Kumar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+
+<body class="text-white relative">
+
+  <!-- Dark Mode Toggle -->
+  <button id="toggle-dark">🌙 Dark Mode</button>
+
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar relative z-10">
+    <div class="logo">Aashutosh | Kumar</div>
+    <div id="menu-toggle" class="menu-toggle">☰</div>
+    <ul id="nav-links" class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#project">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 text-center">
+    <h1 class="text-5xl md:text-6xl font-extrabold fade-slide">
+      Hi, I'm <span class="text-purple-500">Aashutosh</span>
+    </h1>
+
+    <p class="text-lg md:text-xl mt-4 text-gray-300 max-w-xl typing" id="typing-text"></p>
+
+    <!-- Image Placeholder -->
+    <div class="mt-12 fade-slide">
+      <img src="images.jpg" alt="Profile Photo" class="mx-auto max-w-xl rounded-lg shadow-lg" />
+    </div>
+
+    <!-- Scroll Icon -->
+    <div class="mt-8 animate-bounce">
+      <div class="w-6 h-10 border-2 border-white rounded-full flex justify-center items-start p-1">
+        <div class="w-2 h-2 bg-white rounded-full"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills p-10">
+    <h3 class="text-3xl font-bold mb-6 text-center">Skills</h3>
+    <div class="skills-grid">
+      <div class="skill-card">💻 C</div>
+      <div class="skill-card">⚡ C++</div>
+      <div class="skill-card">🐍 Python</div>
+      <div class="skill-card">🟨 JavaScript</div>
+      <div class="skill-card">🌐 HTML</div>
+      <div class="skill-card">🎨 CSS</div>
+    </div>
+  </section>
+
+
+  <!-- Projects Section -->
+  <div id="project" class="container2 p-10">
+    <header class="header2 mb-6">
+      <h1 class="text-2xl font-bold">Projects</h1>
+    </header>
+    <div class="projects grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div class="project-card bg-white text-black rounded-lg p-4 shadow-lg">
+        <img src="chat-app-screenshot.png" alt="Hangman Game" class="rounded">
+        <h3><a href="https://iamrealaashu.github.io/Hangman.github.io/">Hangman Game</a></h3>
+        <p>This Hangman Game helps improve thinking and memory. Specially for children to learn with fun.</p>
+      </div>
+      <div class="project-card bg-white text-black rounded-lg p-4 shadow-lg">
+        <img src="ecommerce-screenshot.png" alt="E-Commerce" class="rounded">
+        <h3><a href="#">E-Commerce</a></h3>
+        <p>An e-commerce website using React and Express.js with user authentication (login/signup).</p>
+      </div>
+      <div class="project-card bg-white text-black rounded-lg p-4 shadow-lg">
+        <img src="English-leraning-screenshot.png" alt="English Learning" class="rounded">
+        <h3><a href="projects/englishowl.html">EnglishOwl</a></h3>
+        <p>EnglishOwl helps improve English language skills with interactive lessons and quizzes.</p>
+      </div>
+      <div class="project-card bg-white text-black rounded-lg p-4 shadow-lg">
+        <img src="portfolio-screenshot.png" alt="Portfolio" class="rounded">
+        <h3><a href="#">Portfolio</a></h3>
+        <p>A responsive and animated portfolio site showcasing my work and projects.</p>
+      </div>
+      <div class="project-card bg-white text-black rounded-lg p-4 shadow-lg">
+        <img src="ox-game-screenshot.png" alt="O-X Game" class="rounded">
+        <h3><a href="#">O-X Game</a></h3>
+        <p>A Tic-Tac-Toe game featuring an unbeatable computer mode.</p>
+      </div>
+      <div class="project-card bg-white text-black rounded-lg p-4 shadow-lg">
+        <img src="matrix-calculator-screenshot.png" alt="Calculator" class="rounded">
+        <h3><a href="#">Calculator</a></h3>
+        <p>A Calculator using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card bg-white text-black rounded-lg p-4 shadow-lg">
+        <img src="bouncy-ball-game-screenshot.png" alt="Softy AI aasistant" class="rounded">
+        <h3><a href="#">Softy AI assistant</a></h3>
+        <p>A Python-based voice assistant that executes commands such as telling the time/date, searching Wikipedia,
+          playing YouTube songs, opening calculator/notepad, telling jokes, and performing Google searches</p>
+      </div>
+      <div class="project-card bg-white text-black rounded-lg p-4 shadow-lg">
+        <img src="simple-piano-screenshot.png" alt="voice recorder" class="rounded">
+        <h3><a href="#">voice recorder</a></h3>
+        <p>A desktop Voice Recorder application built with Python (Tkinter GUI, Sounddevice, and Scipy).</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="container3 p-10">
+    <div class="intro mb-6">
+      <h1 class="text-2xl font-bold">Write something for me!</h1>
+      <p>Hi there! I'd love to hear from you. Whether you're interested in working together, have a question, or want to
+        send feedback, drop me a message below. I'll get back to you as soon as possible.</p>
+    </div>
+    <form class="contact-form grid gap-4" id="contactForm" action="https://formspree.io/f/xkgvyogk" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required class="p-2 rounded text-black">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required class="p-2 rounded text-black">
+
+      <label for="contact">Contact Number (optional)</label>
+      <input type="tel" id="contact" name="contact" class="p-2 rounded text-black">
+
+      <label for="message">Message for me!</label>
+      <textarea id="message" name="message" rows="4" required class="p-2 rounded text-black"></textarea>
+
+      <button type="submit" class="bg-purple-600 text-white py-2 px-4 rounded">Submit</button>
+    </form>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-center p-8 md:p-10 mt-10">
+    <!-- Title -->
+    <h2 class="text-2xl font-semibold mb-6 text-purple-400">Contact Me</h2>
+
+    <!-- Social Icons -->
+    <div class="flex justify-center gap-6 mb-6">
+      <a href="https://www.linkedin.com/in/aashutosh-kumar-9647a7358" class="fa fa-linkedin social-icon social-animate"
+        target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"></a>
+
+      <a href="https://twitter.com/YOUR_USERNAME" class="fa fa-twitter social-icon social-animate" target="_blank"
+        rel="noopener noreferrer" aria-label="Twitter"></a>
+
+      <a href="https://www.instagram.com/mr.aashu_0311" class="fa fa-instagram social-icon social-animate"
+        target="_blank" rel="noopener noreferrer" aria-label="Instagram"></a>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="text-gray-300 space-y-2 mb-6">
+      <p>Thank you for visiting my site! Please share your feedback.</p>
+      <p><span class="font-semibold">📞</span> +91 9153280929</p>
+      <p><span class="font-semibold">📧</span>
+        <a href="mailto:aashutosh.chaurasia23@gmail.com" class="hover:text-purple-400 transition duration-300">
+          aashutosh.chaurasia23@gmail.com
+        </a>
+      </p>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-sm text-gray-500 border-t border-gray-700 pt-4">
+      © 2025 Aashutosh Kumar. All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const form = e.target;
+
+      const res = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (res.ok) {
+        alert("✅ Thank you! Your message has been sent.");
+        form.reset();
+      } else {
+        alert("❌ Oops! Something went wrong, please try again.");
+      }
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
