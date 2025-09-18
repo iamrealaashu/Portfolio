@@ -15,57 +15,6 @@ body {
       color: #f4f4f9;
     }
 
-/* General mobile fixes */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Projects container responsive */
-.container2 {
-  margin: 20px auto;
-  padding: 15px;
-}
-
-/* Contact form responsive */
-.contact-form {
-  position: static;  /* remove left:200px */
-  margin: 20px auto;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-}
-
-/* Responsive text scaling */
-h1, h2, h3 {
-  word-wrap: break-word;
-}
-
-/* Mobile specific */
-@media (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .projects {
-    grid-template-columns: 1fr;
-  }
-
-  .container3 {
-    padding: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.8rem;
-  }
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
     @keyframes gradientShift {
       0% {
         background-position: 0% 50%;
@@ -553,4 +502,5 @@ footer p {
   opacity: 1;
   transform: scale(1);
 }
+
 
